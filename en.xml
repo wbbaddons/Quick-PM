@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE language SYSTEM "http://www.woltlab.com/DTDs/language.dtd">
+<language languagecode="en">
+	<category name="wcf.quickPn">
+		<item name="wcf.quickPn.title"><![CDATA[Send Quick-PM]]></item>
+		<item name="wcf.quickPn.sendPnTo"><![CDATA[You can send a "Quick-Private-Message" to "{$recipient}" without using the PM-Form.]]></item>
+		<item name="wcf.quickPn.sendmail"><![CDATA[Submit]]></item>
+		<item name="wcf.quickPn.subject"><![CDATA[Subject]]></item>
+		<item name="wcf.quickPn.message"><![CDATA[Message:]]></item>
+	</category>
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.quickpm"><![CDATA[Quick-PM System]]></item>
+		<item name="wcf.acp.option.category.quickpm.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.quick_pm_active"><![CDATA[Activate Quick-PM]]></item>
+		<item name="wcf.acp.option.quick_pm_active.description"><![CDATA[You can globaly activate or deactivate the Quick-PM system]]></item>
+	</category>
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.user.pm.canUseQuickPm"><![CDATA[Group can use Quick-PM]]></item>
+		<item name="wcf.acp.group.option.user.pm.canUseQuickPm.description"><![CDATA[Activate this option to allow this group members to use the Quick-PM System]]></item>
+	</category>
+</language>

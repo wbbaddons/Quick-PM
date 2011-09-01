@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE language SYSTEM "http://www.woltlab.com/DTDs/language.dtd">
+<language languagecode="hr">
+	<category name="wcf.quickPn">
+		<item name="wcf.quickPn.title"><![CDATA[Poslati Privatnu Poruku]]></item>
+		<item name="wcf.quickPn.sendPnTo"><![CDATA[Ovdje mozete poslati privatnu poruku korisniku "{$recipient}".]]></item>
+		<item name="wcf.quickPn.sendmail"><![CDATA[Posalji]]></item>
+		<item name="wcf.quickPn.subject"><![CDATA[Naslov:]]></item>
+		<item name="wcf.quickPn.message"><![CDATA[Poruka:]]></item>
+	</category>
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.quickpm"><![CDATA[Brza-PP Sistem]]></item>
+		<item name="wcf.acp.option.category.quickpm.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.quick_pm_active"><![CDATA[Aktiviraj Brzu-PP]]></item>
+		<item name="wcf.acp.option.quick_pm_active.description"><![CDATA[Mozete globalno aktivirati ili deaktivirati sistem Brze-PP-e]]></item>
+	</category>
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.user.pm.canUseQuickPm"><![CDATA[Moze koristiti Brzu-PP]]></item>
+		<item name="wcf.acp.group.option.user.pm.canUseQuickPm.description"><![CDATA[Aktivirajte ovu opciju ako zelite dopustiti da clanovi ove grupe mogu koristiti sistem Brze-PP]]></item>
+	</category>
+</language>

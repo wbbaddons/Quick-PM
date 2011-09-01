@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE data SYSTEM "http://www.woltlab.com/DTDs/eventListeners.dtd">
+<data>
+	<import>
+		<eventlistener>
+			<eventclassname>UserPage</eventclassname>
+			<eventname>readData</eventname>
+			<listenerclassfile>lib/system/event/listener/quickpnUserProfilePageListener.class.php</listenerclassfile>
+		</eventlistener>
+	</import>
+</data>

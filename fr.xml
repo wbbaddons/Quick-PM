@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE language SYSTEM "http://www.woltlab.com/DTDs/language.dtd">
+<language languagecode="fr">
+	<category name="wcf.quickPn">
+		<item name="wcf.quickPn.title"><![CDATA[Envoyer un message privé rapide]]></item>
+		<item name="wcf.quickPn.sendPnTo"><![CDATA[Vous pouvez envoyer un message privé rapidement à "{$recipient}" sans passer par le formulaire de messagerie privée.]]></item>
+		<item name="wcf.quickPn.sendmail"><![CDATA[Envoyer]]></item>
+		<item name="wcf.quickPn.subject"><![CDATA[Sujet]]></item>
+		<item name="wcf.quickPn.message"><![CDATA[Message :]]></item>
+	</category>
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.quickpm"><![CDATA[Système de message privé rapide]]></item>
+		<item name="wcf.acp.option.category.quickpm.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.quick_pm_active"><![CDATA[Activer la messagerie privée rapide]]></item>
+		<item name="wcf.acp.option.quick_pm_active.description"><![CDATA[Activer la possibilité d’envoyer des messages privés directement à partir de la page de profil des utilisateurs.]]></item>
+	</category>
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.user.pm.canUseQuickPm"><![CDATA[Peut utiliser la messagerie privée rapide]]></item>
+		<item name="wcf.acp.group.option.user.pm.canUseQuickPm.description"><![CDATA[Les membres de ce groupe peuvent utiliser le système de messagerie privée rapide.]]></item>
+	</category>
+</language>

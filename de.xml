@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE language SYSTEM "http://www.woltlab.com/DTDs/language.dtd">
+<language languagecode="de">
+	<category name="wcf.quickPn">
+		<item name="wcf.quickPn.title"><![CDATA[Eine Quick-PN senden]]></item>
+		<item name="wcf.quickPn.sendPnTo"><![CDATA[Hier können Sie direkt eine PN an "{$recipient}" eingeben und senden.]]></item>
+		<item name="wcf.quickPn.sendmail"><![CDATA[Absenden]]></item>
+		<item name="wcf.quickPn.subject"><![CDATA[Betreff:]]></item>
+		<item name="wcf.quickPn.message"><![CDATA[Nachricht:]]></item>
+	</category>
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.quickpm"><![CDATA[Quick-PN System]]></item>
+		<item name="wcf.acp.option.category.quickpm.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.quick_pm_active"><![CDATA[Quick-PN System aktivieren]]></item>
+		<item name="wcf.acp.option.quick_pm_active.description"><![CDATA[Hier können Sie das Quick-PN System für das Userprofil ein- oder ausschalten.]]></item>
+	</category>
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.user.pm.canUseQuickPm"><![CDATA[Gruppe kann Quick-PN System nutzen]]></item>
+		<item name="wcf.acp.group.option.user.pm.canUseQuickPm.description"><![CDATA[Aktivieren Sie diese Option, damit Benutzer in dieser Gruppe das Quick-PN System nutzen können]]></item>
+	</category>
+</language>

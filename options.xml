@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE data SYSTEM "http://www.woltlab.com/DTDs/options.dtd">
+<data>
+	<import>
+		<categories>
+			<category name="quickpm">
+				<parent>message</parent>
+				<showorder>20</showorder>
+			</category>
+		</categories>
+		<options>
+			<option name="quick_pm_active">
+				<categoryname>quickpm</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+				<showorder>1</showorder>
+			</option>
+		</options>
+	</import>
+</data>
