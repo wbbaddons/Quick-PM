@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/language.xsd" languagecode="en">
-	<category name="wcf.quickPn">
-		<item name="wcf.quickPn.title"><![CDATA[Send Quick-PM]]></item>
-		<item name="wcf.quickPn.sendPnTo"><![CDATA[You can send a "Quick-Private-Message" to "{$recipient}" without using the PM-Form.]]></item>
-		<item name="wcf.quickPn.sendmail"><![CDATA[Submit]]></item>
-		<item name="wcf.quickPn.subject"><![CDATA[Subject]]></item>
-		<item name="wcf.quickPn.message"><![CDATA[Message:]]></item>
+	<category name="wcf.quickPM">
+		<item name="wcf.quickPM.title"><![CDATA[Send Quick-PM]]></item>
+		<item name="wcf.quickPM.sendPMTo"><![CDATA[You can send a "Quick-Private-Message" to "{$recipient}" without using the PM-Form.]]></item>
+		<item name="wcf.quickPM.sendmail"><![CDATA[Submit]]></item>
+		<item name="wcf.quickPM.subject"><![CDATA[Subject]]></item>
+		<item name="wcf.quickPM.message"><![CDATA[Message:]]></item>
 	</category>
 	<category name="wcf.acp.option">
 		<item name="wcf.acp.option.category.quickpm"><![CDATA[Quick-PM System]]></item>

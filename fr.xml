@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/language.xsd" languagecode="fr">
-	<category name="wcf.quickPn">
-		<item name="wcf.quickPn.title"><![CDATA[Envoyer un message privé rapide]]></item>
-		<item name="wcf.quickPn.sendPnTo"><![CDATA[Vous pouvez envoyer un message privé rapidement à "{$recipient}" sans passer par le formulaire de messagerie privée.]]></item>
-		<item name="wcf.quickPn.sendmail"><![CDATA[Envoyer]]></item>
-		<item name="wcf.quickPn.subject"><![CDATA[Sujet]]></item>
-		<item name="wcf.quickPn.message"><![CDATA[Message :]]></item>
+	<category name="wcf.quickPM">
+		<item name="wcf.quickPM.title"><![CDATA[Envoyer un message privé rapide]]></item>
+		<item name="wcf.quickPM.sendPMTo"><![CDATA[Vous pouvez envoyer un message privé rapidement à "{$recipient}" sans passer par le formulaire de messagerie privée.]]></item>
+		<item name="wcf.quickPM.sendmail"><![CDATA[Envoyer]]></item>
+		<item name="wcf.quickPM.subject"><![CDATA[Sujet]]></item>
+		<item name="wcf.quickPM.message"><![CDATA[Message :]]></item>
 	</category>
 	<category name="wcf.acp.option">
 		<item name="wcf.acp.option.category.quickpm"><![CDATA[Système de message privé rapide]]></item>
