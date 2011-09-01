@@ -3,7 +3,6 @@
 	<category name="wcf.quickPM">
 		<item name="wcf.quickPM.title"><![CDATA[Eine Quick-PN senden]]></item>
 		<item name="wcf.quickPM.sendPMTo"><![CDATA[Hier können Sie direkt eine PN an "{$recipient}" eingeben und senden.]]></item>
-		<item name="wcf.quickPM.message"><![CDATA[Nachricht:]]></item>
 	</category>
 	<category name="wcf.acp.option">
 		<item name="wcf.acp.option.category.quickpm"><![CDATA[Quick-PN System]]></item>

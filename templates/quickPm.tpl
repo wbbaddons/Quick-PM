@@ -16,7 +16,7 @@
 								<input type="text" class="inputText" name="subject" id="subject" />
 							</div>
 							<div class="formField">
-							       <p class="smallFont" align="left">{lang}wcf.quickPM.message{/lang}</p>
+							       <p class="smallFont" align="left">{lang}wcf.pm.text{/lang}</p>
 							       <p class="normalFont"><textarea name="text" id="text" rows="7"></textarea>
 							       </p>
 							</div>
