@@ -3,7 +3,6 @@
 	<category name="wcf.quickPM">
 		<item name="wcf.quickPM.title"><![CDATA[Envoyer un message privé rapide]]></item>
 		<item name="wcf.quickPM.sendPMTo"><![CDATA[Vous pouvez envoyer un message privé rapidement à "{$recipient}" sans passer par le formulaire de messagerie privée.]]></item>
-		<item name="wcf.quickPM.sendmail"><![CDATA[Envoyer]]></item>
 		<item name="wcf.quickPM.subject"><![CDATA[Sujet]]></item>
 		<item name="wcf.quickPM.message"><![CDATA[Message :]]></item>
 	</category>

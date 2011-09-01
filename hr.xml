@@ -3,7 +3,6 @@
 	<category name="wcf.quickPM">
 		<item name="wcf.quickPM.title"><![CDATA[Poslati Privatnu Poruku]]></item>
 		<item name="wcf.quickPM.sendPMTo"><![CDATA[Ovdje mozete poslati privatnu poruku korisniku "{$recipient}".]]></item>
-		<item name="wcf.quickPM.sendmail"><![CDATA[Posalji]]></item>
 		<item name="wcf.quickPM.subject"><![CDATA[Naslov:]]></item>
 		<item name="wcf.quickPM.message"><![CDATA[Poruka:]]></item>
 	</category>
