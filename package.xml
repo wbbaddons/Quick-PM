@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<package name="de.wbb3addons.wcf.quick-pm" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/package.xsd">
+<package name="de.wbbaddons.wcf.quick-pm" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/package.xsd">
 	<packageinformation>
 		<packagename><![CDATA[Quick-PM-Box for the users profile page]]></packagename>
 		<packagename language="de"><![CDATA[Quick-PNs im Benutzerprofil]]></packagename>
@@ -20,7 +20,7 @@
 	
 	<authorinformation>
 		<author><![CDATA[Sani9000]]></author>
-		<authorurl><![CDATA[http://community.woltlab.com]]></authorurl>
+		<authorurl><![CDATA[http://www.wbbaddons.de]]></authorurl>
 	</authorinformation>
 	
 	<instructions type="install">

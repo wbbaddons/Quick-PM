@@ -7,7 +7,7 @@ require_once(WCF_DIR.'lib/form/MessageForm.class.php');
  * Includes the Quick-PM Template
  *
  * @author Martin Schwendowius
- * @package de.wbb3addons.wcf.quick-pm
+ * @package de.wbbaddons.wcf.quick-pm
  */
 class QuickPMUserProfilePageListener implements EventListener {
 	const PERMISSION_TYPE = 'message';
