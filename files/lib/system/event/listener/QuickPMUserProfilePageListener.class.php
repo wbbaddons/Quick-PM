@@ -2,7 +2,7 @@
 require_once(WCF_DIR.'lib/system/event/EventListener.class.php');
 require_once(WCF_DIR.'lib/form/MessageForm.class.php');
 
-class quickpnUserProfilePageListener implements EventListener {
+class QuickPMUserProfilePageListener implements EventListener {
 
 	public $permissionType = 'message';
 	public $parseURL = 0;
