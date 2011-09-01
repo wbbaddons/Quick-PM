@@ -9,7 +9,7 @@ class quickpnUserProfilePageListener implements EventListener {
 	public $enableSmilies = 0;
 	public $enableBBCodes = 0;
 	public $showSignature = 0;
- 
+
 	public function execute($eventObj, $className, $eventName){
 		$user = $eventObj->user;
 
