@@ -1,80 +1,33 @@
 <?xml version="1.0"?>
 <package name="de.wbb3addons.wcf.quick-pm" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/package.xsd">
 	<packageinformation>
-		<packagename>Quick-PM-Box for the users profile page</packagename>
-		<packagename language="de">Quick-PNs im Benutzerprofil</packagename>
-		<packagename language="de-informal">Quick-PNs im Benutzerprofil</packagename>
-		<packagename language="fr">Messagerie privée rapide dans les pages de profil d’utilisateur</packagename>
+		<packagename><![CDATA[Quick-PM-Box for the users profile page]]></packagename>
+		<packagename language="de"><![CDATA[Quick-PNs im Benutzerprofil]]></packagename>
+		<packagename language="de-informal"><![CDATA[Quick-PNs im Benutzerprofil]]></packagename>
+		<packagename language="fr"><![CDATA[Messagerie privée rapide dans les pages de profil d’utilisateur]]></packagename>
 		<standalone>0</standalone>
 		<isunique>1</isunique>
-		<version>1.0.2</version>
+		<version>1.1.0</version>
 		<date>2008-04-20</date>
-		<plugin>com.woltlab.wcf</plugin>
+		<plugin>com.woltlab.wcf.data.message.pm</plugin>
 	</packageinformation>
+	
 	<requiredpackages>
-		<requiredpackage minversion="3.0.5">com.woltlab.wbb</requiredpackage>
-		<requiredpackage minversion="1.0.6">com.woltlab.wcf</requiredpackage>
+		<requiredpackage minversion="1.1.0">com.woltlab.wcf</requiredpackage>
 		<requiredpackage>com.woltlab.wcf.page.user.profile</requiredpackage>
+		<requiredpackage minversion="1.1.7">com.woltlab.wcf.data.message.pm</requiredpackage>
 	</requiredpackages>
+	
 	<authorinformation>
-		<author>Sani9000</author>
-		<authorurl>http://community.woltlab.com</authorurl>
+		<author><![CDATA[Sani9000]]></author>
+		<authorurl><![CDATA[http://community.woltlab.com]]></authorurl>
 	</authorinformation>
+	
 	<instructions type="install">
 		<templates>templates.tar</templates>
 		<files>files.tar</files>
 		<options>options.xml</options>
 		<groupoptions>groupoptions.xml</groupoptions>
-		<eventlistener>eventlistener.xml</eventlistener>
-		<languages languagecode="de">de.xml</languages>
-		<languages languagecode="de-informal">de-informal.xml</languages>
-		<languages languagecode="en">en.xml</languages>
-		<languages languagecode="fr">fr.xml</languages>
-		<languages languagecode="hr">hr.xml</languages>
-	</instructions>
-	<instructions type="update" fromversion="1.0.2 Beta 1">
-		<languages languagecode="fr">fr.xml</languages>
-	</instructions>
-	<instructions type="update" fromversion="1.0.1 PL 2">
-		<templates>templates.tar</templates>
-		<options>options.xml</options>
-		<groupoptions>groupoptions.xml</groupoptions>
-		<languages languagecode="de">de.xml</languages>
-		<languages languagecode="de-informal">de-informal.xml</languages>
-		<languages languagecode="en">en.xml</languages>
-		<languages languagecode="fr">fr.xml</languages>
-		<languages languagecode="hr">hr.xml</languages>
-	</instructions>
-	<instructions type="update" fromversion="1.0.1 PL 1">
-		<templates>templates.tar</templates>
-		<options>options.xml</options>
-		<groupoptions>groupoptions.xml</groupoptions>
-		<eventlistener>eventlistener.xml</eventlistener>
-		<files>files_update2.tar</files>
-		<languages languagecode="de">de.xml</languages>
-		<languages languagecode="de-informal">de-informal.xml</languages>
-		<languages languagecode="en">en.xml</languages>
-		<languages languagecode="fr">fr.xml</languages>
-		<languages languagecode="hr">hr.xml</languages>
-	</instructions>
-	<instructions type="update" fromversion="1.0.1">
-		<templates>templates.tar</templates>
-		<options>options.xml</options>
-		<groupoptions>groupoptions.xml</groupoptions>
-		<eventlistener>eventlistener.xml</eventlistener>
-		<files>files_update2.tar</files>
-		<languages languagecode="de">de.xml</languages>
-		<languages languagecode="de-informal">de-informal.xml</languages>
-		<languages languagecode="en">en.xml</languages>
-		<languages languagecode="fr">fr.xml</languages>
-		<languages languagecode="hr">hr.xml</languages>
-	</instructions>
-	<instructions type="update" fromversion="1.0.0">
-		<templates>templates.tar</templates>
-		<options>options.xml</options>
-		<groupoptions>groupoptions.xml</groupoptions>
-		<files>files_update.tar</files>
-		<script>lib/removeTPLPatch.php</script>
 		<eventlistener>eventlistener.xml</eventlistener>
 		<languages languagecode="de">de.xml</languages>
 		<languages languagecode="de-informal">de-informal.xml</languages>
