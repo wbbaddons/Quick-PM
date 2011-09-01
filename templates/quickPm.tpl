@@ -12,7 +12,7 @@
 						<input id="recipients" name="recipients" value="{$recipient}" type="hidden" />
 						<fieldset style="width:90%">
 							<div class="formField">
-								<p class="smallFont" align="left">{lang}wcf.quickPM.subject{/lang}</p>
+								<p class="smallFont" align="left">{lang}wcf.pm.subject{/lang}</p>
 								<input type="text" class="inputText" name="subject" id="subject" />
 							</div>
 							<div class="formField">

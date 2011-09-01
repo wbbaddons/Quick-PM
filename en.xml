@@ -3,7 +3,6 @@
 	<category name="wcf.quickPM">
 		<item name="wcf.quickPM.title"><![CDATA[Send Quick-PM]]></item>
 		<item name="wcf.quickPM.sendPMTo"><![CDATA[You can send a "Quick-Private-Message" to "{$recipient}" without using the PM-Form.]]></item>
-		<item name="wcf.quickPM.subject"><![CDATA[Subject]]></item>
 		<item name="wcf.quickPM.message"><![CDATA[Message:]]></item>
 	</category>
 	<category name="wcf.acp.option">
