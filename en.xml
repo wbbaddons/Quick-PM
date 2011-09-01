@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE language SYSTEM "http://www.woltlab.com/DTDs/language.dtd">
-<language languagecode="en">
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/language.xsd" languagecode="en">
 	<category name="wcf.quickPn">
 		<item name="wcf.quickPn.title"><![CDATA[Send Quick-PM]]></item>
 		<item name="wcf.quickPn.sendPnTo"><![CDATA[You can send a "Quick-Private-Message" to "{$recipient}" without using the PM-Form.]]></item>
