@@ -9,7 +9,7 @@ require_once(WCF_DIR.'lib/form/MessageForm.class.php');
  * @author Martin Schwendowius
  * @package de.wbbaddons.wcf.quick-pm
  */
-class QuickPMUserProfilePageListener implements EventListener {
+class QuickPMUserProfileFrameListener implements EventListener {
 	const PERMISSION_TYPE = 'message';
 	public $parseURL = 0;
 	public $enableSmilies = 0;
