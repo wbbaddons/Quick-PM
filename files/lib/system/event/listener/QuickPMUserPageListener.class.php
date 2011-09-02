@@ -9,7 +9,7 @@ require_once(WCF_DIR.'lib/form/MessageForm.class.php');
  * @author Martin Schwendowius
  * @package de.wbbaddons.wcf.quick-pm
  */
-class QuickPMUserProfileFrameListener implements EventListener {
+class QuickPMUserPageListener implements EventListener {
 	const PERMISSION_TYPE = 'message';
 	public $parseURL = 0;
 	public $enableSmilies = 0;
@@ -20,8 +20,6 @@ class QuickPMUserProfileFrameListener implements EventListener {
 	 * @see EventListener::execute()
 	 */
 	public function execute($eventObj, $className, $eventName){
-		$user = $eventObj->user;
-
 		if (WCF::getUser()->userID) {
 			$this->parseURL = WCF::getUser()->{self::PERMISSION_TYPE.'ParseURL'};
 			$this->enableSmilies = WCF::getUser()->{self::PERMISSION_TYPE.'EnableSmilies'};
@@ -33,7 +31,7 @@ class QuickPMUserProfileFrameListener implements EventListener {
 		}
 
 		WCF::getTPL()->assign(array(
-			'recipient' => $eventObj->user,
+			'recipient' => $eventObj->frame->user->username,
 			'parseURL' => $this->parseURL,
 			'enableSmilies' => $this->enableSmilies,
 			'enableBBCodes' => $this->enableBBCodes,

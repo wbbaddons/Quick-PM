@@ -4,7 +4,7 @@
 			<div class="border">
 				<div class="container-1 border">
 					<div class="containerHead">
-						<div class="containerIcon"><img src="{icon}icon/pmNewM.png{/icon}" alt="" /></div>
+						<div class="containerIcon"><img src="{icon}pmNewM.png{/icon}" alt="" /></div>
 						<h3 class="containerContent">{lang}wcf.quickPM.title{/lang}</h3>
 						<h3 class="smallFont containerContent" align="left">{lang}wcf.quickPM.sendPMTo{/lang}</h3>
 					</div>
