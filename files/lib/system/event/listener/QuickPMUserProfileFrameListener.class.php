@@ -40,7 +40,7 @@ class QuickPMUserProfileFrameListener implements EventListener {
 			'showSignature' => $this->showSignature
 		));
 
-		WCF::getTPL()->append('additionalContents3', WCF::getTPL()->fetch('quickPM'));
+		WCF::getTPL()->append('additionalContents3', WCF::getTPL()->fetch('quickPm'));
 	}
 }
 ?>
