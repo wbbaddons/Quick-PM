@@ -1,7 +1,6 @@
 <?php
 // wcf imports
 require_once(WCF_DIR.'lib/system/event/EventListener.class.php');
-require_once(WCF_DIR.'lib/form/MessageForm.class.php');
 
 /**
  * Includes the Quick-PM Template
