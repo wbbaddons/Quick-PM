@@ -7,7 +7,9 @@ require_once(WCF_DIR.'lib/form/MessageForm.class.php');
  * Includes the Quick-PM Template
  *
  * @author Tim Düsterhus, Martin Schwendowius
+ * @copyright 2008-2011 wbbaddons.de
  * @package de.wbbaddons.wcf.quick-pm
+ * @license LGPL - Lesser General Public License <http://www.gnu.org/licenses/lgpl.html>
  */
 class QuickPMUserPageListener implements EventListener {
 	/**
@@ -21,7 +23,6 @@ class QuickPMUserPageListener implements EventListener {
 	 * @see EventListener::execute()
 	 */
 	public function execute($eventObj, $className, $eventName){
-		// check permissions
 		if (!WCF::getUser()->userID || !WCF::getUser->getPermission('user.pm.canUseQuickPm') || !WCF::getUser->getPermission('user.pm.canUsePm') || !QUICK_PM_ACTIVE) return;
 
 		WCF::getTPL()->assign(array(
@@ -35,4 +36,3 @@ class QuickPMUserPageListener implements EventListener {
 		WCF::getTPL()->append('additionalContent3', WCF::getTPL()->fetch('quickPm'));
 	}
 }
-?>
