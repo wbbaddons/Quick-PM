@@ -20,16 +20,16 @@ class QuickPMUserPageListener implements EventListener {
 	 * @see EventListener::execute()
 	 */
 	public function execute($eventObj, $className, $eventName){
-		if (WCF::getUser()->userID) {
-			$this->parseURL = WCF::getUser()->{self::PERMISSION_TYPE.'ParseURL'};
-			$this->enableSmilies = WCF::getUser()->{self::PERMISSION_TYPE.'EnableSmilies'};
-			$this->enableBBCodes = WCF::getUser()->{self::PERMISSION_TYPE.'EnableBBCodes'};
-			$this->showSignature = WCF::getUser()->{self::PERMISSION_TYPE.'ShowSignature'};
-		}
-		else {
-			return;
-		}
+		// check permissions
+		if (!WCF::getUser()->userID || !WCF::getUser->getPermission('user.pm.canUseQuickPm') || !WCF::getUser->getPermission('user.pm.canUsePm') || !QUICK_PM_ACTIVE) return;
+		
+		//set form values
+		$this->parseURL = WCF::getUser()->{self::PERMISSION_TYPE.'ParseURL'};
+		$this->enableSmilies = WCF::getUser()->{self::PERMISSION_TYPE.'EnableSmilies'};
+		$this->enableBBCodes = WCF::getUser()->{self::PERMISSION_TYPE.'EnableBBCodes'};
+		$this->showSignature = WCF::getUser()->{self::PERMISSION_TYPE.'ShowSignature'};
 
+		//assign variables
 		WCF::getTPL()->assign(array(
 			'recipient' => $eventObj->frame->user->username,
 			'parseURL' => $this->parseURL,
@@ -38,6 +38,7 @@ class QuickPMUserPageListener implements EventListener {
 			'showSignature' => $this->showSignature
 		));
 
+		// Fetch template
 		WCF::getTPL()->append('additionalContent3', WCF::getTPL()->fetch('quickPm'));
 	}
 }
