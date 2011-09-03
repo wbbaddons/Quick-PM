@@ -23,7 +23,8 @@ class QuickPMUserPageListener implements EventListener {
 	 * @see EventListener::execute()
 	 */
 	public function execute($eventObj, $className, $eventName){
-		if (!WCF::getUser()->userID || !WCF::getUser()->getPermission('user.pm.canUseQuickPm') || !WCF::getUser()->getPermission('user.pm.canUsePm') || !QUICK_PM_ACTIVE) return;
+		if (!WCF::getUser()->userID || !WCF::getUser()->getPermission('user.pm.canUseQuickPm') || !WCF::getUser()->getPermission('user.pm.canUsePm') || !$eventObj->frame->user->getPermission('user.pm.canUsePm') || !$eventObj->frame->user->acceptPm || !QUICK_PM_ACTIVE) return;
+		if ($eventObj->frame->user->onlyBuddyCanPm && !$eventObj->frame->user->buddy && $eventObj->frame->user->userID != WCF::getUser()->userID && !WCF::getUser()->getPermission('user.profile.blacklist.canNotBeIgnored')) return;
 
 		WCF::getTPL()->assign(array(
 			'recipient' => $eventObj->frame->user->username,
