@@ -6,15 +6,16 @@ require_once(WCF_DIR.'lib/form/MessageForm.class.php');
 /**
  * Includes the Quick-PM Template
  *
- * @author Martin Schwendowius
+ * @author Tim Düsterhus, Martin Schwendowius
  * @package de.wbbaddons.wcf.quick-pm
  */
 class QuickPMUserPageListener implements EventListener {
+	/**
+	 * The permission-type for PMs
+	 *
+	 * @var	sting
+	 */
 	const PERMISSION_TYPE = 'message';
-	public $parseURL = 0;
-	public $enableSmilies = 0;
-	public $enableBBCodes = 0;
-	public $showSignature = 0;
 
 	/**
 	 * @see EventListener::execute()
@@ -22,23 +23,15 @@ class QuickPMUserPageListener implements EventListener {
 	public function execute($eventObj, $className, $eventName){
 		// check permissions
 		if (!WCF::getUser()->userID || !WCF::getUser->getPermission('user.pm.canUseQuickPm') || !WCF::getUser->getPermission('user.pm.canUsePm') || !QUICK_PM_ACTIVE) return;
-		
-		//set form values
-		$this->parseURL = WCF::getUser()->{self::PERMISSION_TYPE.'ParseURL'};
-		$this->enableSmilies = WCF::getUser()->{self::PERMISSION_TYPE.'EnableSmilies'};
-		$this->enableBBCodes = WCF::getUser()->{self::PERMISSION_TYPE.'EnableBBCodes'};
-		$this->showSignature = WCF::getUser()->{self::PERMISSION_TYPE.'ShowSignature'};
 
-		//assign variables
 		WCF::getTPL()->assign(array(
 			'recipient' => $eventObj->frame->user->username,
-			'parseURL' => $this->parseURL,
-			'enableSmilies' => $this->enableSmilies,
-			'enableBBCodes' => $this->enableBBCodes,
-			'showSignature' => $this->showSignature
+			'parseURL' => WCF::getUser()->{self::PERMISSION_TYPE.'ParseURL'},
+			'enableSmilies' => WCF::getUser()->{self::PERMISSION_TYPE.'EnableSmilies'},
+			'enableBBCodes' => WCF::getUser()->{self::PERMISSION_TYPE.'EnableBBCodes'},
+			'showSignature' => WCF::getUser()->{self::PERMISSION_TYPE.'ShowSignature'}
 		));
 
-		// Fetch template
 		WCF::getTPL()->append('additionalContent3', WCF::getTPL()->fetch('quickPm'));
 	}
 }
