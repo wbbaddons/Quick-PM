@@ -34,6 +34,6 @@ class QuickPMUserPageListener implements EventListener {
 			'showSignature' => WCF::getUser()->{self::PERMISSION_TYPE.'ShowSignature'}
 		));
 
-		WCF::getTPL()->append('additionalContent3', WCF::getTPL()->fetch('quickPm'));
+		WCF::getTPL()->append('additionalContent2', WCF::getTPL()->fetch('quickPm'));
 	}
 }

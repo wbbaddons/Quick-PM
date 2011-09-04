@@ -7,14 +7,14 @@
 		<packagename language="fr"><![CDATA[Messagerie privée rapide dans les pages de profil d’utilisateur]]></packagename>
 		<standalone>0</standalone>
 		<isunique>1</isunique>
-		<version>1.1.1</version>
-		<date>2011-09-03</date>
+		<version>1.1.2</version>
+		<date>2011-09-04</date>
 		<plugin>com.woltlab.wcf.data.message.pm</plugin>
 	</packageinformation>
 	
 	<requiredpackages>
-		<requiredpackage minversion="1.1.0">com.woltlab.wcf</requiredpackage>
-		<requiredpackage>com.woltlab.wcf.page.user.profile</requiredpackage>
+		<requiredpackage minversion="1.1.8">com.woltlab.wcf</requiredpackage>
+		<requiredpackage minversion="1.1.6">com.woltlab.wcf.page.user.profile</requiredpackage>
 		<requiredpackage minversion="1.1.7">com.woltlab.wcf.data.message.pm</requiredpackage>
 	</requiredpackages>
 	
@@ -37,6 +37,10 @@
 	</instructions>
 	
 	<instructions type="update" fromversion="1.1.0">
+		<files>files.tar</files>
+	</instructions>
+	
+	<instructions type="update" fromversion="1.1.1">
 		<files>files.tar</files>
 	</instructions>
 </package>
