@@ -2,7 +2,7 @@
 	<h3 class="subHeadline">{lang}wcf.quickPM.title{/lang}</h3>
 	<p class="smallFont">{lang}wcf.quickPM.sendPMTo{/lang}</p>
 	
-	<div style="width: 98%; text-align: center; margin: 0px auto;">						
+	<div style="width: 98%; text-align: center; margin: 0px auto;">
 		<form method="post" action="index.php?form=PMNew">
 			
 			<fieldset>
@@ -12,9 +12,8 @@
 					<input type="text" class="inputText" name="subject" id="subject" />
 				</div>
 				<div class="formField">
-				       <p class="smallFont" style="text-align: left;">{lang}wcf.pm.text{/lang}</p>
-				       <p class="normalFont"><textarea name="text" id="text" rows="7" cols="2"></textarea>
-				       </p>
+					<p class="smallFont" style="text-align: left;">{lang}wcf.pm.text{/lang}</p>
+					<p class="normalFont"><textarea name="text" id="text" rows="7" cols="2"></textarea></p>
 				</div>
 				{@SID_INPUT_TAG}
 				<input type="hidden" name="parseURL" value="{$parseURL}" />
